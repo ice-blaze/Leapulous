@@ -151,8 +151,8 @@ public class LeapImageRetriever : MonoBehaviour {
       // The distortion range is -0.6 to +1.7. Normalize to range [0..1).
       dval = (dval + 0.6f) / 2.3f;
       if (dval > 1.0f || dval < 0.0f) {
-          Debug.Log("WARNING: got a distortion value outside my encoded range at pixel " +
-                    i + ": " + distortion_data_[i]);
+//          Debug.Log("WARNING: got a distortion value outside my encoded range at pixel " +
+//                    i + ": " + distortion_data_[i]);
       }
 
       // Encode the float as RGBA.
